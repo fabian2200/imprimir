@@ -180,7 +180,8 @@ class _MyAppState extends State<MyApp> {
                             List<LineText> list = [];
                             list.add(LineText(type: LineText.TYPE_BARCODE, x:8, y:8, content: 'qrcode i\n'));
 
-                            await bluetoothPrint.printLabel(config, list);
+                            var respuesta = await bluetoothPrint.printLabel(config, list);
+                            print("Respuesta"+respuesta.toString());
                           }:null,
                         ),
                         OutlinedButton(
