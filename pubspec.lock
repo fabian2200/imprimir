@@ -9,14 +9,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.10.0"
-  bluetooth_print:
+  bluetooth_x_print:
     dependency: "direct main"
     description:
-      name: bluetooth_print
-      sha256: b391cd7b22b772e07dfddb4e065ecbed5f0e8dd777ce726e1ea56492c8d3ecc8
+      name: bluetooth_x_print
+      sha256: "82550b0fffc34bcbb517520937e35bcb31dc7e76b963dea4d072920af479d02d"
       url: "https://pub.dev"
     source: hosted
-    version: "4.3.0"
+    version: "1.0.10"
   boolean_selector:
     dependency: transitive
     description:
@@ -209,5 +209,5 @@ packages:
     source: hosted
     version: "2.1.4"
 sdks:
-  dart: ">=2.19.6 <3.0.0"
+  dart: ">=2.19.0 <3.0.0"
   flutter: ">=1.12.13+hotfix.6"
