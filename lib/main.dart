@@ -163,12 +163,7 @@ class _MyAppState extends State<MyApp> {
                             list.add(LineText(type: LineText.TYPE_TEXT, content: '12.0', align: LineText.ALIGN_LEFT, x: 500, relativeX: 0, linefeed: 1));
 
                             list.add(LineText(type: LineText.TYPE_TEXT, content: '**********************************************', weight: 1, align: LineText.ALIGN_CENTER,linefeed: 1));
-                            list.add(LineText(linefeed: 1));
-
-                            ByteData data = await rootBundle.load("assets/images/bluetooth_print.png");
-                            List<int> imageBytes = data.buffer.asUint8List(data.offsetInBytes, data.lengthInBytes);
-                            String base64Image = base64Encode(imageBytes);
-                            // list.add(LineText(type: LineText.TYPE_IMAGE, content: base64Image, align: LineText.ALIGN_CENTER, linefeed: 1));
+                            list.add(LineText(linefeed: 1));;
 
                             await bluetoothPrint.printReceipt(config, list);
                           }:null,
